@@ -10,7 +10,9 @@
 **Pregunta 2: El efecto de la oscilación.** Observe el comportamiento de la función en el intervalo dado. ¿Qué ocurre con la pendiente y la oscilación en las zonas de mayor curvatura? Explique matemáticamente por qué los métodos compuestos tradicionales fallan más en esa zona que la cuadratura de Gauss-Legendre.
 
 **Respuesta**. En funciones como $f(x)=cos(x^2)$ la frecuencia de oscilación crece conforme aumenta $x$.
-Derivando: $$f'(x)=-2x\sin(x^2)$$ $$f''(x)=-2\sin(x^2)-4x^2\cos(x^2)$$Se observa que la curvatura aumenta significativamente para valores grandes de $x$.
+Derivando: $$f'(x)=-2x\sin(x^2)$$
+$$f''(x)=-2\sin(x^2)-4x^2\cos(x^2)$$
+Se observa que la curvatura aumenta significativamente para valores grandes de $x$.
 Cuando la función oscila rápidamente, las aproximaciones locales de Trapecio y Simpson dejan de seguir la forma real de la curva porque utilizan subintervalos equiespaciados. Como Gauss-Legendre evita utilizar puntos uniformes sino puntos estratégicos derivados a partir del polinomio de Legendre, capturan mejor la variación incluso en los extremos más oscilantes de la curva, utilizando menos puntos.
 
 **Pregunta 3: Límites del Método**. Si cambiáramos la función por el polinomio exacto $P(x)=/x^7-3x^4+2x$, ¿cuántos nodos $n$ requeriría Gauss-Legendre para obtener un error absoluto de exactamente cero?
